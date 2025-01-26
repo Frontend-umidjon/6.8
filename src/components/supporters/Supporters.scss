@@ -1,0 +1,33 @@
+.supporters{
+    padding: 64px 0;
+    background-color: #F5F5F5; 
+   
+    &__title{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18.75px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #1D2130;
+        margin-bottom: 32px;
+        text-wrap: nowrap;
+        hr{
+           width: 100%;
+           color: #E5E5E5;
+            
+        }
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        gap: 100px;
+    }
+    &__item{
+        img{
+            width: 100%;
+        }
+    }
+}

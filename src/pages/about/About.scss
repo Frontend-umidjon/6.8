@@ -1,0 +1,110 @@
+.about{
+    padding: 96px 0;
+    background-color: #F5F5F5;
+    &__content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__pr{
+        max-width: 640px;
+        .about__name{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18.75px;
+            letter-spacing: 2px;
+            color: #0B0706;
+            margin-bottom: 32px;
+            text-wrap: 
+            nowrap;
+            hr{
+                width: 72px;
+                height: 3px;
+                background-color: #0B0706;
+            }
+        }
+        h1{
+            margin-left: 72px;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 64px;
+            color: #0B0706;
+        }
+    }
+    &__info{
+        max-width: 496px;
+        h3{
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            color: #1D2130;
+        }
+        p{
+            margin-top: 16px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 25.6px;
+            color: #1D2130;
+        }
+    }
+    &__img{
+        margin-top: 96px;
+        position: relative;
+        img{
+            width: 100%;
+        }
+    }   
+    &__play{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        width: 64px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+    &__bottom{
+        margin-top: 96px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 96px;
+        div{
+            max-width: 496px;
+        }
+       h3{
+        font-size: 16px;
+        line-height: 18.75px;
+        color: #1D2130;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+       }
+       h2{
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 42px;
+        color: #1D2130;
+       }
+       p{
+        margin-top: 16px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25.6px;
+        color: #1D2130;
+        opacity: 70%;
+       }
+    }
+
+
+}

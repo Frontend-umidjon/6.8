@@ -1,0 +1,60 @@
+.donation-chart-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+
+  .title {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    color: #d1d5db;
+    margin-bottom: 30px;
+    max-width: 400px;
+  }
+
+  .chart-wrapper {
+    position: relative;
+    width: 300px;
+    height: 300px;
+
+    .center-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+    }
+  }
+
+  .legend {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+
+      .legend-color {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
+  }
+}
