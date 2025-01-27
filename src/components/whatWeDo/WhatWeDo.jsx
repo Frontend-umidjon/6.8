@@ -13,7 +13,7 @@ const WhatWeDo = () => {
         <p className='whatWeDo__text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
          <div className='whatWeDo__list'>
             {
-              WHATWEDO.map((item) => {
+              WHATWEDO?.map((item) => {
                 return(
                   <div className="whatWeDo__item" key={item.id}>
                     <img src={item.img} alt="" />
