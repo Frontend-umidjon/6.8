@@ -13,6 +13,12 @@ import iconWhatWeDo6 from '../assets/iconWhatWeDo6.png'
 import TintImage from '../assets/TintImage.png'
 import havaiImg from '../assets/havaiImg.png'
 import safetyImg from '../assets/safetyImg.png'
+import news1 from '../assets/news1.png'
+import news2 from '../assets/news2.png'
+import news3 from '../assets/news3.png'
+import news4 from '../assets/news4.png'
+import goal2 from '../assets/Goal2.png'
+import goal3 from '../assets/Goal3.png'
 
 
 
@@ -187,6 +193,47 @@ export const WHATWECANDO = [
 
 export const MEDIA = [
     {
-        
+        id:1,
+        img: news1,
+        title: 'Don’t destroy greenery and don’t spoil scenery.',
+        text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.'
+    },
+    {
+        id:2,
+        img: goal2,
+        title: 'Why saving wildlife is extremely important',
+        text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.'
+    },
+    {
+        id:3,
+        img: goal3,
+        title: 'Caring for the present is caring for the future',
+        text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.'
+    }
+]
+ export const NEWS = [
+    {
+        id:1,
+        img: news1,
+        title: 'Don’t destroy greenery and don’t spoil scenery.',
+        text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.'
+    },
+    {
+        id:2,
+        img: news2,
+        title: ' Is climate change happening faster than expected?',
+        text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.'
+    },
+    {
+        id:3,
+        img: news3,
+        title: "Top 10 facts about wind farms you didn't know",
+        text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.'
+    },
+    {
+        id:4,
+        img: news4,
+        title: 'Our goal is to make water available for everyone',
+        text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.'
     }
 ]
