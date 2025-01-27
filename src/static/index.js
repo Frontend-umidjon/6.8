@@ -133,3 +133,60 @@ export const PROJECTS = [
 
     }
 ]
+
+export const WHATWECANDO = [
+    {
+        id: 1,
+        img:
+            iconWhatWeDo
+        ,
+        title: 'Build Healthy Cities',
+        text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.'
+    },
+    {
+        id: 2,
+        img:
+            iconWhatWeDo2
+        ,
+        title: 'Protect land and water',
+        text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.'
+    },
+    {
+        id: 3,
+        img:
+            iconWhatWeDo3
+        ,
+        title: 'Tree plantation',
+        text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.'
+    },
+    {
+        id: 4,
+        img:
+            iconWhatWeDo4
+        ,
+        title: 'Water sustainability',
+        text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.'
+    },
+    {
+        id: 5,
+        img:
+            iconWhatWeDo5
+        ,
+        title: 'Animal safety',
+        text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.'
+    },
+    {
+        id: 6,
+        img:
+            iconWhatWeDo6
+        ,
+        title: 'Biodiversity',
+        text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.'
+    }
+]
+
+export const MEDIA = [
+    {
+        
+    }
+]
