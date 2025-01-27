@@ -12,7 +12,7 @@ const News = () => {
 
             <div className='news__list'>
                 {
-                    NEWS.map((item) => {
+                    NEWS?.map((item) => {
                         return(
                             <div className="news__item" key={item.id}>
                                 <img src={item.img} alt="" />
