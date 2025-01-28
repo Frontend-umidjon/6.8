@@ -1,58 +1,67 @@
 import React from 'react';
 import { Doughnut } from 'react-chartjs-2';
-import { Box, Typography } from '@mui/material';
 import 'chart.js/auto';
 import './Diagramm.scss';
-import logo from '../../assets/Logo.png'
+import diagrammImg from '../../assets/diagramImg.png'
 
-const data = {
-  labels: ['Planting Trees', 'Cleanliness Program', 'Helping People', 'Animal Safety', 'Feeding the Poor'],
-  datasets: [
-    {
-      data: [40, 35, 10, 10, 5],
-      backgroundColor: ['#8BC34A', '#9575CD', '#FFEB3B', '#FFCC80', '#F48FB1'],
-      hoverBackgroundColor: ['#8BC34A', '#9575CD', '#FFEB3B', '#FFCC80', '#F48FB1'],
+const DONATIONS_DATA = [
+  { label: 'Planting Trees', value: 40, color: '#B4E0A7' },
+  { label: 'Cleanliness Program', value: 35, color: '#9B8EE8' },
+  { label: 'Helping People', value: 10, color: '#F9E5C9' },
+  { label: 'Animal Safety', value: 10, color: '#F6C85D' },
+  { label: 'Feeding the Poor', value: 5, color: '#E8A5D0' },
+];
+
+export default function DonationChart() {
+  const chartData = {
+    labels: DONATIONS_DATA.map((item) => item.label),
+    datasets: [
+      {
+        data: DONATIONS_DATA.map((item) => item.value),
+        backgroundColor: DONATIONS_DATA.map((item) => item.color),
+        borderWidth: 0, 
+      },
+    ],
+  };
+
+  const chartOptions = {
+    cutout: '70%', 
+    plugins: {
+      legend: {
+        display: false, 
+      },
     },
-  ],
-};
+  };
 
-const DonationChart = () => {
   return (
-    
-    <Box className="donation-chart-container">
-      
-      <Typography variant="h4" className="title">
-        How we spend your donations and where it goes
-      </Typography>
-      <Typography variant="body1" className="subtitle">
-        We understand that when you make a donation, you want to know exactly where your money is going and we pledge to be transparent.
-      </Typography>
-      <Box className="chart-wrapper">
-        <Doughnut data={data} />
-        <div className="center-text">
-          <img src={logo} alt="" />
+    <div className="donation-chart">
+     <div className="container">
+     <div className="donation-chart__content">
+        <h1 className="donation-chart__title">
+          How we spend your donations and where it goes
+        </h1>
+        <p className="donation-chart__description">
+          We understand that when you make a donation, you want to know exactly where your
+          money is going, and we pledge to be transparent.
+        </p>
+        <div className="donation-chart__legend">
+          {DONATIONS_DATA.map(({ label, value, color }) => (
+            <div key={label} className="donation-chart__legend-item">
+              <span
+                className="donation-chart__legend-indicator"
+                style={{ backgroundColor: color }}
+              />
+              <span>{`${value}% ${label}`}</span>
+            </div>
+          ))}
         </div>
+      </div>
 
-      </Box>
-      <Box className="legend">
-        <Typography variant="body2" className="legend-item">
-          <span className="legend-color" style={{ backgroundColor: '#8BC34A' }}></span> 40% planting trees
-        </Typography>
-        <Typography variant="body2" className="legend-item">
-          <span className="legend-color" style={{ backgroundColor: '#9575CD' }}></span> 35% cleanliness program
-        </Typography>
-        <Typography variant="body2" className="legend-item">
-          <span className="legend-color" style={{ backgroundColor: '#FFEB3B' }}></span> 10% helping people
-        </Typography>
-        <Typography variant="body2" className="legend-item">
-          <span className="legend-color" style={{ backgroundColor: '#FFCC80' }}></span> 10% animal safety
-        </Typography>
-        <Typography variant="body2" className="legend-item">
-          <span className="legend-color" style={{ backgroundColor: '#F48FB1' }}></span> 5% feeding the poor
-        </Typography>
-      </Box>
-    </Box>
+      <div className="donation-chart__chart">
+        <Doughnut data={chartData} options={chartOptions} />
+        <div className="donation-chart__center-text"><img src={diagrammImg} alt="" /></div>
+      </div>
+     </div>
+    </div>
   );
-};
-
-export default DonationChart;
+}

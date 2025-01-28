@@ -237,3 +237,4 @@ export const MEDIA = [
         text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.'
     }
 ]
+

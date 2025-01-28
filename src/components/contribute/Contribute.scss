@@ -1,0 +1,72 @@
+.contribute{
+    padding: 96px 0;
+   .container{
+    height: 384px;
+    padding: 0;
+    
+    background: url("../../assets/ContributeImg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   &__bg{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+   }
+
+    &__content{
+       display: grid;
+       place-items: center;
+    }
+    &__title{
+        max-width: 631px;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 64px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 24px;
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+    &__btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18.75px;
+        border: none;
+        padding: 16px 32px;
+        border-radius: 8px;
+        transition: all .3s ease;
+        cursor: pointer;
+    }
+    .green{
+        background-color: #70C174;
+        color: #fff;
+        &:hover{
+            background-color: #0B0706;
+            color: #fff;
+        }
+    }
+    .white{
+        background-color: #fff;
+        color: #0B0706;
+        &:hover{
+            background-color: #0B0706;
+            color: #fff;
+        }
+    }
+}

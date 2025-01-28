@@ -5,6 +5,9 @@ import Supporters from '../../components/supporters/Supporters';
 import WhatWeDo from '../../components/whatWeDo/WhatWeDo';
 import HaveDone from '../../components/haveDone/HaveDone';
 import Diagramm from '../../components/diagramm/Diagramm';
+import Contribute from '../../components/contribute/Contribute';
+import News from '../../components/news/News';
+import Events from '../../components/events/Events';
 
 const Home = () => {
   return (
@@ -14,7 +17,10 @@ const Home = () => {
       <Supporters />
       <WhatWeDo />
       <HaveDone />
-      {/* <Diagramm /> */}
+      <Diagramm />
+      <Contribute />
+      <News />
+      <Events />
     </div>
   );
 };
