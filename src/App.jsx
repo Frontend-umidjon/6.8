@@ -8,6 +8,7 @@ import WhatDo from './pages/whatDo/WhatDo'
 import Media from './pages/media/Media'
 import Contact from './pages/contact/Contact'
 import Footer from './components/Footer/Footer'
+import NotFound from './pages/notfound/NotFound'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <Route path="/whatwedo" element={<WhatDo />} />
       <Route path="/media" element={<Media />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
     <Footer />
 
