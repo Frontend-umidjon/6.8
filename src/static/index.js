@@ -19,6 +19,19 @@ import news3 from '../assets/news3.png'
 import news4 from '../assets/news4.png'
 import goal2 from '../assets/Goal2.png'
 import goal3 from '../assets/Goal3.png'
+import achievment1 from '../assets/awardStar.png'
+import achievment2 from '../assets/awardKubog.png'
+import achievment3 from '../assets/awardAchievSolid.png'
+import achievment4 from '../assets/awardAchievRegular.png'
+import team1 from '../assets/team1.png'
+import team2 from '../assets/team2.png'
+import team3 from '../assets/team3.png'
+import team4 from '../assets/team4.png'     
+import team5 from '../assets/team5.png'
+import team6 from '../assets/team6.png'
+import team7 from '../assets/team7.png'
+import team8 from '../assets/team8.png'
+
 
 
 
@@ -238,3 +251,84 @@ export const MEDIA = [
     }
 ]
 
+export const ACHIEVMENTS = [
+    {
+        id:1,
+        img: achievment1,
+        year: '2021',
+        title:'Best NGO Award',
+        text: 'Berlin, Germany'
+    },
+    {
+        id:2,
+        img: achievment2,
+        year: '2018',
+        title:'Global Award',
+        text: 'New York, USA'
+    },
+    {
+        id:3,
+        img: achievment3,
+        year: '2014',
+        title:'Foresto Award',
+        text: 'New Delhi, India'
+    },
+    {
+        id:4,
+        img: achievment4,
+        year: '2010',
+        title:'Earth Saver Award',
+        text: 'Vienna, Austria'
+    }
+]
+
+export const TEAMMEMBERS = [
+    {
+        id:1,
+        img: team1,
+        name: 'Leonard John Davies',
+        position: 'Cofounder, CEO'
+    },
+    {
+        id:2,
+        img: team2, 
+        name: 'Francis Weber',
+        position: 'Vice Chairman'
+    },
+    {
+        id:3,
+        img: team3,
+        name: 'Kyla Obrien',
+        position: 'Head of Authority'
+    },
+    {
+        id:4,
+        img: team4,
+        name: 'Adrian Dixon',
+        position: 'Support Executive'
+    },
+    {
+        id:5,
+        img: team5,
+        name: 'Freddy Busby',
+        position: 'Project Manager'
+    },
+    {
+        id:6,
+        img: team6,
+        name: 'Dale Banks',
+        position: 'Accountatnt, Finance'
+    },
+    {
+        id:7,
+        img: team7,
+        name: 'Miriam Middleton',
+        position: 'Cofounder, CEO'
+    },
+    {
+        id:8,
+        img: team8,
+        name: 'Ellen Walton',
+        position: 'Vice Chairman'
+    }
+]

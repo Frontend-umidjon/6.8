@@ -7,6 +7,7 @@ import About from './pages/about/About'
 import WhatDo from './pages/whatDo/WhatDo'
 import Media from './pages/media/Media'
 import Contact from './pages/contact/Contact'
+import Footer from './components/Footer/Footer'
 
 function App() {
 
@@ -20,7 +21,7 @@ function App() {
       <Route path="/media" element={<Media />} />
       <Route path="/contact" element={<Contact />} />
     </Routes>
-
+    <Footer />
 
     </>
   )

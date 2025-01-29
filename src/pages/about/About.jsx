@@ -3,6 +3,12 @@ import "./About.scss";
 import { FaPlay } from "react-icons/fa";
 import TeamHero from "../../assets/TeamHero.png";
 import Supporters from "../../components/supporters/Supporters";
+import Contribute from "../../components/contribute/Contribute";
+import News from "../../components/news/News";
+import Events from "../../components/events/Events";
+import Achievments from "../../components/achievments/Achievments";
+import Journey from "../../components/journey/Journey";
+import TeamMembers from "../../components/teamMembers/TeamMembers";
 
 const About = () => {
   return (
@@ -63,6 +69,12 @@ const About = () => {
        
       </div>
       <Supporters />
+      <Achievments />
+      <Journey />
+      <TeamMembers />
+      <Contribute />
+      <News />
+      <Events />
     </div>
   );
 };

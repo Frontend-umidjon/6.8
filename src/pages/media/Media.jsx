@@ -2,6 +2,7 @@ import React from 'react'
 import './Media.scss'
 import { MEDIA } from '../../static'
 import News from '../../components/news/News'
+import Events from '../../components/events/Events'
 
 const Media = () => {
   return (
@@ -34,6 +35,7 @@ const Media = () => {
         </div>
     </div>
     <News />
+    <Events />
     </>
   )
 }

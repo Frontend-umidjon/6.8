@@ -3,6 +3,9 @@ import "./WhatDo.scss";
 import whatWeDoHero from "../../assets/whatWeDoHero.png";
 import { WHATWECANDO } from "../../static";
 import HaveDone from "../../components/haveDone/HaveDone";
+import Contribute from "../../components/contribute/Contribute";
+import News from "../../components/news/News";
+import Events from "../../components/events/Events";
 
 const WhatDo = () => {
   return (
@@ -46,6 +49,9 @@ const WhatDo = () => {
             })}
           </div>
           <HaveDone />
+          <Contribute />
+      <News />
+      <Events />
         </div>
       </div>
     </>
